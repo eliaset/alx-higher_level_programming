@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    my_t = ()
-    l = len(sentence)
-    if l == 0:
-        my_t = l, None
+    length = len(sentence)
+
+    if (length == 0):
+        my_t = (length, None)
     else:
-        my_t = l, sentence[0]
-    return my_t
+        my_t = (length, sentence[0])
+
+    return (my_t)
