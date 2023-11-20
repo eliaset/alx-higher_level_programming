@@ -2,12 +2,12 @@
 def roman_to_int(roman_string):
     if not roman_string or type(roman_string) != str:
         return 0
-    roman_num = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    roman_d = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     result = 0
     for j in range(len(roman_string)):
-        if j > 0 and roman_num[roman_string[j]] > roman_num[roman_string[j - 1]]:
-            result += roman_num[roman_string[j]] - 2 * \
-                        roman_num[roman_string[j - 1]]
+        if j > 0 and roman_d[roman_string[j]] > roman_d[roman_string[j - 1]]:
+            result += roman_d[roman_string[j]] - 2 * \
+                        roman_d[roman_string[j - 1]]
         else:
-            result += roman_num[roman_string[j]]
+            result += roman_d[roman_string[j]]
     return result
