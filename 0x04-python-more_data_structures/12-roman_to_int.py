@@ -10,4 +10,4 @@ def roman_to_int(roman_string):
                         roman_num[roman_string[j - 1]]
         else:
             result += roman_num[roman_string[j]]
-    return
+    return result
